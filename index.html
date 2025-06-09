@@ -1,3 +1,384 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
 
-<button onclick="myFunction()">Try it</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css" />
+  <title>My Portfolio</title>
+  <meta name="description" content="My Portfolio" />
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="main-header__logo-container">
+      <div class="main-header__logo-img-cont">
+        <img
+          src="https://avatars.githubusercontent.com/u/131144472?v=4&size=64"
+          alt="logo Image" class="main-header__logo-img" />
+      </div>
+      <h4 class="main-header__logo-text">Matias Escobar</h4>
+    </div>
+    <nav class="main-header__navigation">
+      <ul class="main-header__navigation-links">
+        <li class="main-header__navigation-link"><a href="./index.html"> Home </a></li>
+        <li class="main-header__navigation-link"><a href="./index.html#about"> About </a></li>
+        <li class="main-header__navigation-link">
+          <a href="./index.html#projects"> Projects </a>
+        </li>
+        <li class="main-header__navigation-link"><a href="./index.html#contact" href=""> Contact </a></li>
+      </ul>
+    </nav>
+    <div class="main-header__sm-scr-nav-btn">
+      <div class="main-header__sm-scr-nav-btn-line"></div>
+      <div class="main-header__sm-scr-nav-btn-line"></div>
+    </div>
+    <div class="main-header__sm-menu">
+      <div class="main-header__sm-menu-close">
+
+      </div>
+      <ul class="main-header__sm-menu-links">
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--1" name="home-hero">Home</a>
+        </li>
+
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--2" name="about">About</a>
+        </li>
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--3" name="projects">Projects</a>
+        </li>
+        <li>
+          <a class="main-header__sm-menu-link main-header__sm-menu-link--4" name="contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- <button class="btn btn-theme btn-sm">Download CV</button> -->
+  </header>
+
+  <!--Remove or Comment out this theme selector code when you are done with choosing the right color for your theme so this color selector don't appear when you host the site online-->
+  <!-- <div class="themeClrSelector">
+    <input placeholder="Color Selector" type="color" value="#1DA1F2" class="themeClrSelector__input" />
+    <img alt="theme color tester" src="https://img.icons8.com/fluent/48/000000/rgb-circle-1.png"
+      class="themeClrSelector__img" />
+  </div> -->
+  <!---->
+
+  <section id="home-hero" class="home-hero">
+    <div class="home-hero__content">
+      <div class="home-hero__info">
+        <h1 class="heading-primary home-hero__heading-primary">
+          <span class="heading-primary__sm"> Bienvenidos👋</span>
+          <span class="heading-primary__main">
+            Mi nombre es Matias Escobar! soy FullStack Web Developer y aqui podras ver mis avances en programación.
+          </span>
+        </h1>
+        <button class="btn btn-theme home-hero__btn-theme">Projects</button>
+        <button class="btn btn-inv home-hero__btn-theme">Contact</button>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="about main-section">
+    <div class="main-container">
+      <h2 class="heading-secondary projects__heading-secondary">
+        <span class="heading-secondary__sm"> About 🦄</span>
+        <span class="heading-secondary__main">
+          En esta sección encontrarás más información sobre mí, a que me dedico y la lista de mis habilidades actuales en programación
+      </h2>
+      <div class="main-section__content">
+        <div class="about__info">
+          <div class="about__main-info">
+            <h3 class="heading-quaternary about__heading-quaternary">
+              Mi historia
+            </h3>
+            <p class="text-primary about__text-primary">
+              <span>
+                Con una base sólida de más de diez años en la Fuerza Aérea Argentina, mi carrera se ha distinguido por la optimización de la eficiencia operativa y la gestión precisa de recursos en entornos de alta exigencia.
+              </span>
+              <span>
+                Lideré equipos para perfeccionar la administración y la producción, lo que resultó en una coordinación proactiva y una mejora continua de los procesos.
+              </span>
+              <span>
+                Mi experiencia en la Fuerza Aérea Argentina me proporcionó una base sólida en gestión de proyectos, pensamiento estratégico y resolución de problemas en entornos de alta exigencia, habilidades que ahora aplico con pasión en el desarrollo de software. 
+              </span>
+              <span>
+                Mi reciente formación como Desarrollador Backend y Full Stack, egresado del Bootcamp de Henry, complementa esta experiencia con un profundo conocimiento de tecnologías modernas como NestJS, Express, TypeORM, Docker, PostgreSQL, MongoDB, React y TypeScript. 
+              </span>
+              <span>
+                La participación activa en el desarrollo de cinco proyectos prácticos, incluyendo la creación de la API para una plataforma fitness con características como autenticación y pagos online, evidencia mi capacidad para aplicar principios de eficiencia y gestión en el ámbito del desarrollo de software. 
+              </span>
+              <span>
+                 Estoy motivado para integrar mi experiencia en operaciones con mis nuevas habilidades técnicas para impulsar la eficiencia y la innovación en un entorno tecnológico.
+              </span>
+            </p>
+            <button class="btn btn-theme about__btn-theme">Projects</button>
+          </div>
+          <div class="about__skill-info">
+            <h3 class="heading-quaternary about__heading-quaternary">
+              Mis Habilidades
+            </h3>
+            <ul class="about__skills">
+              <li class="about__skill">html</li>
+              <li class="about__skill">css</li>
+              <li class="about__skill">Javascript</li>
+              <li class="about__skill">React</li>
+              <li class="about__skill">Node</li>
+              <li class="about__skill">Git</li>
+              <li class="about__skill">Vscode</li>
+              <li class="about__skill">Docker</li>
+              <li class="about__skill">PostgreSQL</li>
+              <li class="about__skill">MongoDB</li>
+              <li class="about__skill">NestJS</li>
+              <li class="about__skill">Express</li>
+              <li class="about__skill">TypeORM</li>
+              <li class="about__skill">TypeScript</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="skills-showcase">
+    <ul class="skills-showcase__list">
+      <li class="skills-showcase__list-item">
+        <i class="devicon-html5-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-css3-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-javascript-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-react-original"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon--plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-nodejs-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-git-plain"></i>
+      </li>
+      <!-- <li class="skills-showcase__list-item">
+        <i class="devicon-android-plain"></i>
+      </li>
+      <li class="skills-showcase__list-item">
+        <i class="devicon-python-plain"></i>
+      </li> -->
+    </ul>
+  </section>
+  <section id="projects" class="projects main-section">
+    <div class="main-container">
+      <h2 class="heading-secondary projects__heading-secondary">
+        <span class="heading-secondary__sm"> Projects 🛠️</span>
+        <span class="heading-secondary__main">
+          Aqui encontrarás algunos de los proyectos que he desarrollado desde mi bootcamp en Henry hasta la actualidad.
+        </span>
+      </h2>
+      <div class="main-section__content">
+        <div class="projects__list">
+          <div class="projects__list-item">
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 1 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/miPaginaWeb/127.0.0.1_8080_.png" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                Mi Pagina Web
+              </h3>
+              <!-- <hr class="projects__title-text-divider" /> -->
+
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  Proyecto personal para practicar HTML, CSS y JavaScript.
+                </span>
+              </p>
+              <button class="btn btn-theme projects__btn-theme">
+                Live Link
+              </button>
+              <button class="btn btn-inv projects__btn-inv">
+                <a href="https://github.com/MatiasGEscobar/mi-pagina-web" target="_blank">Code Link</a>
+              </button>
+            </div>
+          </div>
+          <div class="projects__list-item projects__list-item--inv">
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/universoCine/universoCine.png" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                Universo Cine
+              </h3>
+              <!-- <hr class="projects__title-text-divider" /> -->
+
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  Aplicación web utilizando React para explorar información sobre películas y series.
+                </span>
+              </p>
+              <button class="btn btn-theme projects__btn-theme">
+                Live Link
+              </button>
+              <button class="btn btn-inv projects__btn-inv">
+                <a href="https://github.com/MatiasGEscobar/universoCine" target="_blank">Code Link</a>
+            </button>
+            </div>
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 2 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+          </div>
+          <div class="projects__list-item">
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 3 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <img src="./assets/divinaAura/divinaAura_register.png" alt="Project Image" class="projects__list-item-img" />
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                Divina Aura Estetica
+              </h3>
+              <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  Plataforma para la gestión de citas y servicios de un centro de estética.
+                </span>
+              </p>
+              <button class="btn btn-theme projects__btn-theme">
+                Live Link
+              </button>
+              <button class="btn btn-inv projects__btn-inv">
+                <a href="https://github.com/MatiasGEscobar/Divina-Aura-Estetica" target="_blank">Code Link</a>
+              </button>
+            </div>
+          </div>
+          <div class="projects__list-item projects__list-item--inv">
+            <div class="projects__list-item-details">
+              <div class="projects__list-item-img-cont">
+                <!-- <img src="./assets/mock.png" alt="Project Image" class="projects__list-item-img" /> -->
+              </div>
+              <h3 class="heading-tertiary projects__list-item-heading-tertiary">
+                Back Ecommerce
+              </h3>
+                <p class="text-primary projects__list-item-text-primary">
+                <span>
+                  API RESTful desarrollada con NestJS y PostgreSQL para la gestión de productos, usuarios y pedidos.
+                </span>
+              </p>
+              <button class="btn btn-theme projects__btn-theme">
+                Live Link
+              </button>
+              <button class="btn btn-inv projects__btn-inv">
+                <a href="https://github.com/MatiasGEscobar/Back-Ecommerce" target="_blank">Code Link</a>
+              </button>
+            </div>
+            <div class="projects__list-item-count">
+              <span class="projects__list-item-count-num"> 4 </span>
+              <span class="projects__list-item-count-line"> </span>
+              <span class="projects__list-item-count-end-dot"> </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact main-section">
+    <div class="main-container">
+      <h2 class="heading-secondary">
+        <span class="heading-secondary__sm"> Contact 📞</span>
+        <span class="heading-secondary__main">
+          Sientete libre de contactar conmigo enviando el formulario de abajo y te responderé lo antes posible.
+        </span>
+      </h2>
+      <div class="main-section__content">
+    <div class="contact__form-cont">
+        <form class="contact__form" id="contactForm">
+            <div class="contact__form-field">
+                <label for="name" class="contact__form-field-label">Name</label>
+                <input placeholder="Enter Your Name" type="text" class="contact__form-field-input" name="user_name" />
+            </div>
+            <div class="contact__form-field">
+                <label for="email" class="contact__form-field-label">Email</label>
+                <input placeholder="Enter Your Email" type="email" class="contact__form-field-input" name="user_email" />
+            </div>
+            <div class="contact__form-field">
+                <label for="message" class="contact__form-field-label">Message</label>
+                <textarea placeholder="Enter Your Message" name="message" id="message" cols="30" rows="10" class="contact__form-field-input"></textarea>
+            </div>
+            <button type="submit" class="contact__form-submit">Submit</button>
+        </form>
+        <div class="contact__form-visual"></div>
+    </div>
+</div>
+    </div>
+  </section>
+  <footer class="main-footer">
+    <div class="main-footer__upper">
+      <div class="main-container">
+        <ul class="main-footer__links">
+          <li class="main-footer__link">
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="./index.html#about">About</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="./index.html#projects">Projects</a>
+          </li>
+          <li class="main-footer__link">
+            <a href="./index.html#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="main-footer__mid-line"></div>
+        <div class="main-footer__socials">
+          <a href="https://github.com/MatiasGEscobar" class="main-footer__social-link">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/5557d5a11584d7201a38ee1a95200f57a4cc0f88/15085/assets/png/github-ico.png"
+              alt="" class="main-footer__social-link-icon" />
+          </a>
+          <!-- <a href="#" class="main-footer__social-link">
+            <img src="./assets/icons8-instagram-48.png" alt="" class="main-footer__social-link-icon" />
+          </a> -->
+          <!-- <a href="#" class="main-footer__social-link">
+            <img src="./assets/icons8-twitter-50.png" alt="" class="main-footer__social-link-icon" />
+          </a> -->
+          <a href="https://www.linkedin.com/in/matiasgescobar/" class="main-footer__social-link">
+            <img
+              src="https://d33wubrfki0l68.cloudfront.net/7f29579dde49e02480372aa49f7189c5536b0118/34b92/assets/png/linkedin-ico.png"
+              alt="" class="main-footer__social-link-icon" />
+          </a>
+          <!-- <a href="#" class="main-footer__social-link">
+            <img src="./assets/icons8-pinterest-64.png" alt="" class="main-footer__social-link-icon" />
+          </a> -->
+        </div>
+      </div>
+    </div>
+    <div class="main-footer__bottom">
+      <div class="main-container">
+        <p class="main-footer__bottom-txt">
+          <!-- If you can give me some credits or shoutout here by linking to my website, then that will help me a lot :) -->
+          <a target="_blank" href="https://github.com/rammcodes/wowfolio">WowFolio</a> Open-Source Template
+          <script>document.write(new Date().getFullYear())</script>. Made by
+          <a target="_blank" href="https://rammaheshwari.com">Ram Maheshwari</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
