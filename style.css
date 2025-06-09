@@ -8,17 +8,24 @@
 :root {
   --themeColor: 60, 52, 183;
   /* Theme Color in (R,G,B) format */
+  
 }
 
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  background: linear-gradient(
+  135deg,
+  rgb(60, 52, 183) 0%,
+  rgb(142, 118, 255) 50%,
+  rgb(223, 209, 255) 100%
+);
 }
 
 /* 75em === 1200px */
 @media (max-width: 75em) {
   html {
-    font-size: 60%;
+    font-size: 50%;
   }
 }
 
@@ -133,13 +140,14 @@ a {
 }
 
 .heading-primary__sm {
-  font-size: 2rem;
+  font-size: 2.9rem;
   display: block;
   margin-bottom: 2.5rem;
+  color: rgb(241, 217, 29);
 }
 
 .heading-secondary {
-  font-size: 4rem;
+  font-size: 2rem;
   letter-spacing: 1px;
   line-height: 1.3;
   color: #000;
@@ -147,9 +155,10 @@ a {
 }
 
 .heading-secondary__sm {
-  font-size: 1.8 rem;
+  font-size: 3rem;
   display: block;
   margin-bottom: 2.5rem;
+  color:rgb(50, 20, 77);
 }
 
 .heading-tertiary {
@@ -164,7 +173,7 @@ a {
   font-size: 2.5rem;
   letter-spacing: 1px;
   line-height: 1.3;
-  color: #000;
+  color: rgb(161, 143, 9);;
   font-weight: 400;
 }
 
